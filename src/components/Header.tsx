@@ -1,7 +1,7 @@
 import React from "react";
-import { View, Text, Image, Input } from "native-base";
-
+import { View, Text, Image, Box } from "native-base";
 import { COLORS, FONTS, SIZES, assets } from "../constant";
+import { TextInput } from "react-native";
 
 const HomeHeader = ({ onSearch }: any) => {
   return (
@@ -11,6 +11,7 @@ const HomeHeader = ({ onSearch }: any) => {
         justifyContent="space-between"
         alignItems="center"
       >
+        <Box></Box>
         {/* <Image
           source={assets.logo}
           resizeMode="contain"
@@ -18,11 +19,12 @@ const HomeHeader = ({ onSearch }: any) => {
         /> */}
 
         <View width="45" height="45">
-          {/* <Image
+          <Image
             source={assets.person01}
             resizeMode="contain"
             style={{ width: "100%", height: "100%" }}
-          /> */}
+            alt="person01"
+          />
           <Image
             source={assets.badge}
             resizeMode="contain"
@@ -44,14 +46,15 @@ const HomeHeader = ({ onSearch }: any) => {
           fontSize={SIZES.small}
           color={COLORS.white}
         >
-          Hello Victoria 👋
+          Hello Curpra 👋
         </Text>
 
         <Text
           color="white"
           fontFamily={FONTS.bold}
           fontSize={SIZES.large}
-          marginTop={SIZES.base}
+          marginTop={5}
+          mb={2}
         >
           Let's find masterpiece Art
         </Text>
@@ -64,7 +67,7 @@ const HomeHeader = ({ onSearch }: any) => {
           flexDir="row"
           alignItems={"center"}
           paddingX={SIZES.font}
-          paddingY={SIZES.small}
+          paddingY={SIZES.font}
           borderRadius={SIZES.font}
         >
           <Image
@@ -73,7 +76,7 @@ const HomeHeader = ({ onSearch }: any) => {
             style={{ width: 20, height: 20, marginRight: SIZES.base }}
             alt="search"
           />
-          <Input
+          <TextInput
             placeholder="Search NFTs"
             style={{ flex: 1 }}
             onChangeText={onSearch}

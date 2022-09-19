@@ -4,7 +4,7 @@ import HomeHeader from "../components/Header";
 
 const Home = () => {
   return (
-    <Box>
+    <Box safeAreaTop>
       <HomeHeader />
     </Box>
   );
