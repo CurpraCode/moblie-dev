@@ -11,7 +11,7 @@ export const CircleButton = ({ imgUrl, handlePress, ...props }:any) => {
         height: 40,
         backgroundColor: COLORS.white,
         position: "absolute",
-        borderRadius: SIZES.extraLarge,
+        borderRadius: 10,
         alignItems: "center",
         justifyContent: "center",
         ...SHADOWS.light,
@@ -34,7 +34,7 @@ export const RectButton = ({ minWidth, fontSize, handlePress, ...props }:any) =>
       style={{
         backgroundColor: COLORS.primary,
         padding: SIZES.small,
-        borderRadius: SIZES.extraLarge,
+        borderRadius: 12,
         minWidth: minWidth,
         ...props,
       }}

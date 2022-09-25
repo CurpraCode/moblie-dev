@@ -30,6 +30,7 @@ const App = () => {
           initialRouteName="Home"
         >
           <Stack.Screen name="Home" component={Home} />
+          <Stack.Screen name="Details" component={Details} />
         </Stack.Navigator>
       </NavigationContainer>
     </NativeBaseProvider>
