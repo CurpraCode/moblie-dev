@@ -3,7 +3,7 @@ import { TouchableOpacity, Text, Image } from "react-native";
 
 import { COLORS, SIZES, FONTS, SHADOWS } from "../constant";
 
-export const CircleButton = ({ imgUrl, handlePress, ...props }) => {
+export const CircleButton = ({ imgUrl, handlePress, ...props }:any) => {
   return (
     <TouchableOpacity
       style={{
